@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Learning Selectors</title>
+    <!--1.Basics
+        <link rel="stylesheet" href="./1.Basic-Selector.css" />
+    -->
+
+    <!--2.Psuedo Selectors
+        <link rel="stylesheet" href="./2.Psuedo-Selectors.css" />
+    -->
+
+    <!-- 3.Advance Selectors 
+        <link rel="stylesheet" href="./3.Advance-Selectors.css" />
+    -->
+
+    <!--4.Attribute Selectors
+      -->
+    <link rel="stylesheet" href="./4.Attribute-Selectors.css" />
+  </head>
+  <body>
+    <h1>1.Basics</h1>
+    <h4>Selectors</h4>
+    <h2>I am Element Selector</h2>
+    <h3 class="hd">I am class selector</h3>
+    <h3 id="hi">I am ID selector</h3>
+
+    <h1>2.Specificity</h1>
+    <h2 class="c" , id="x">Element</h2>
+    <h2 class="c" id="x">Class</h2>
+    <h2 class="c" id="x">Id</h2>
+    <h1>End</h1>
+
+    <h1>3.Psuedo Selectors</h1>
+    <ul>
+      <li>first child</li>
+      <li>nth child</li>
+      <li>last child</li>
+    </ul>
+
+    <ul>
+      <li>Only child</li>
+    </ul>
+
+    <a href="#">Psuedo Selectors</a>
+    <h1>End</h1>
+
+    <h1>4.Advance-Selectors</h1>
+
+    <h4 class="adj">Adjacent Sibling</h4>
+    <a href="#">I am adjacent to h4</a>
+
+    <div>
+      <h3 class="adj1">Siblings Having same Parent</h3>
+      <a href="#">Sibling</a>
+    </div>
+
+    <ul class="parent">
+      <li>I am child 1</li>
+      <li>I am child 2</li>
+    </ul>
+
+    <ul class="desc">
+      <li>Child</li>
+      <li>
+        <ol>
+          <li>I am grand child</li>
+        </ol>
+      </li>
+    </ul>
+
+    <h1>End</h1>
+
+    <h1>5.Attribute Selectors</h1>
+
+    <h3 class="subtitle article-subtitle">Select me with class</h3>
+    <img src="/img" alt="no-img" />
+    <img src="/jpg" alt="no-img" />
+    <img src="/png" alt="no-img" />
+    <img src="/abc" alt="no-img" />
+    <h1>End</h1>
+  </body>
+</html>

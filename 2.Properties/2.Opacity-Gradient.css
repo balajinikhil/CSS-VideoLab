@@ -1,0 +1,31 @@
+/*Opacity /Transperency
+By adding alpha to rgb we can controll the opacity 
+it takes value 0-1 (0-transperent 1-opaque)
+*/
+
+.opa {
+  height: 200px;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/*Gradient
+Transition of color from one to another
+i.e directions => there are 4 top, right, bottom, left
+
+1.linear-gradient(direction, color1, color2, .....)
+for direction can also give degrees 
+2.radial-gradient(shape, color1, color2 ....)
+can mention color %
+*/
+
+.gra {
+  margin: 10px 0;
+  height: 200px;
+  width: 200px;
+  /* background: linear-gradient(to bottom, red, pink, yellow); 
+   background: linear-gradient(to top, red, green, blue);
+  background: linear-gradient(to bottom left, aqua, blue); 
+  */
+  background: radial-gradient(circle, red 5%, blue, green);
+}

@@ -1,0 +1,42 @@
+/*Element Selector => We can select an element by mentioning their tag names*/
+
+h2 {
+  background: red;
+  color: white;
+}
+
+/*Class Selector => We can select element by mentioning there class name*/
+
+.hd {
+  background: green;
+  color: wheat;
+}
+
+/*ID selector => We can select an element by mentionig there ID*/
+
+#hi {
+  background: blue;
+  color: honeydew;
+}
+
+/*Multiple elements can have same classes But ID must be unique to each element*/
+
+/*Specificity => Ability of selector to override an existing style
+Order   1.Id        1.Inline
+        2.Class     2.Internal
+        3.Element   3.External 
+*/
+
+h2 {
+  background: red;
+}
+
+.c {
+  background: pink;
+}
+
+#x {
+  background: yellow;
+}
+
+/*ID overrides class and element selector*/

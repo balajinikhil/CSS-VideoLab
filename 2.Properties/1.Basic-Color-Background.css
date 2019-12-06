@@ -1,0 +1,50 @@
+/*Properties
+Selectors target the element which we want to style where as properties change the style of the element 
+
+    selector {
+        //code block
+    property:value;
+    }
+
+    CSS general rule
+    1.Selector => Targets the element which we want to style
+    2.Code block => Whatever style intended to the property is writen inside this code block
+    3.Property => name of the style which we want to change
+
+*/
+
+/*color property
+Changes the color of the element
+
+color inputs 1.hex# values => hexa decimal values to get combination of color 0-F
+2.rgb() => red green blue  0-255
+color picker i.e google to select color scheme*/
+
+.colo {
+  /* color: yellowgreen; */
+  /* color: #4dcf4a; */
+  color: rgb(77, 207, 74);
+}
+
+/*Background
+To add image/color to background*/
+
+.bg {
+  background-color: #abcd;
+}
+
+/*To add an image to background we must mention image path in url 
+If the image dosen't scale full it repeats itself
+2 important background properties
+1.background-repeat: i.repeat //default repeats the img
+                    ii.no-repeat
+2.background-size: height width;
+                cover //streches the img tofit the screen contain //fills the screen by keeping ratio                     
+
+*/
+
+body {
+  background-image: url("https://images.pexels.com/photos/2331572/pexels-photo-2331572.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

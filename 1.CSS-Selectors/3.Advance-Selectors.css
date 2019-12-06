@@ -1,0 +1,26 @@
+/*Advance Child
+
+1.ajacent sibling selector => Selects adjacent element    (i.e next consecutive element) 
+
+2.general sibling => next element will be selected  but both  must have same parent
+
+3.child selector => selects child of specified parent
+
+4.descendent selector => selects all the children and grand child of element
+*/
+
+.adj + a {
+  background: violet;
+}
+
+.adj1 ~ a {
+  background: yellowgreen;
+}
+
+ul > li {
+  background: black;
+}
+
+.desc li {
+  background: aqua;
+}
