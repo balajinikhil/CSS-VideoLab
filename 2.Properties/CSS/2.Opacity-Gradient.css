@@ -29,3 +29,12 @@ can mention color %
   */
   background: radial-gradient(circle, red 5%, blue, green);
 }
+
+/* linear gradient as page divider */
+.divider {
+  widows: 100%;
+  height: 0.5vh;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, red, green, blue);
+}

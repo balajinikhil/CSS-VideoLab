@@ -1,0 +1,36 @@
+/*Flex Box - flexible box
+feature which allows to align items easily      
+
+Split into 2 main parts 
+1.container : parent element which holds all the children element usually a div
+2.item : all children elements inside a parent container
+
+
+
+*/
+h4 {
+  background: green;
+  color: wheat;
+  width: 25px;
+  height: 25px;
+}
+
+/* creating a container
+display: flex 
+Adds flex property and creates flex container */
+
+.container {
+  border: 1px solid black;
+  display: flex;
+
+  /* flex-direction: defines the directional arrangement of the flex items */
+
+  flex-direction: column;
+  flex-direction: row-reverse; /*reverse order*/
+  flex-direction: column-reverse;
+  flex-direction: row; /*default*/
+
+  /* flex-wrap: moves item to a new line when there is no space instead of re-sizing */
+  flex-wrap: wrap;
+  flex-wrap: nowrap; /*default*/
+}

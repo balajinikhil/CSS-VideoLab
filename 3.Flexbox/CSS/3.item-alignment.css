@@ -1,0 +1,26 @@
+h4 {
+  background: coral;
+  color: whitesmoke;
+  margin: 25px;
+}
+
+.container {
+  border: 1px solid black;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.one {
+  flex-basis: 10px;
+  flex-grow: 1;
+}
+
+.two {
+  flex-grow: 1;
+}
+
+.three {
+  flex-shrink: 1;
+}

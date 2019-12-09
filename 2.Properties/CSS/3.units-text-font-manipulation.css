@@ -1,0 +1,51 @@
+/* Units in CSS
+There are 2 types of units
+ 1. Static - Which is fixed
+ 2. Relative - Which is responsive 
+ 
+ Static : 1. px;
+          2. cm 
+          3. mm
+          4. inch 
+          5. pt
+          6. pc   1pc = 12pt
+        
+Relative: 1. %
+          2. em   1em = 16px default
+          3. rem  root 
+          4. vh   based on view port
+          5. vw
+                  
+Text Manipulation
+To change the property of the text */
+.link {
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration: overline;
+  text-decoration: line-through;
+}
+
+.txt {
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
+
+.align {
+  text-align: left;
+  text-align: right;
+  text-align: center;
+  text-align: justify; /*matches the lenght of the words and avoids empty spaces*/
+}
+
+/* Font Manipulation
+Change the font properties */
+
+.fon {
+  font-size: 24px;
+  font-weight: 600; /* 0-800 bolding of txt 400 is standard*/
+  font-style: italic;
+  font-style: bold;
+  font-style: oblique;
+  font-family: "Times New Roman", Times, serif;
+}

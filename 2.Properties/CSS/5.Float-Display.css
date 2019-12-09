@@ -1,0 +1,30 @@
+/*Display 
+There are two properties for a display element 
+1.Inline - dosen't create any new section
+2.Block - creates a new section for the element
+
+Float - Is used to move the element  around whatever is below the element it moves up 
+i.e like a puzzel */
+
+img {
+  float: right;
+}
+
+.span {
+  border: 3px solid black;
+  display: none; /*hides the element  */
+  display: block; /*creates a new section*/
+}
+
+/* 1.display:none;
+   2.display:block;
+   3.display:inline;
+   4.display:inline-block         //removes newline feature of block and keeps block level spacing
+  
+  
+  float:left;
+  float:right;
+  float:none;
+  float:inherit; //inherits the parent float properties
+  
+   */

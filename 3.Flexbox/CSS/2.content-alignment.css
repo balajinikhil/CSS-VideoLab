@@ -1,0 +1,44 @@
+p {
+  background: crimson;
+  color: white;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+/* Content Alignment
+1.justify-content - To align items horizontally
+                : flex-start;  default  i.e left 
+                : flex-end;       i.e right 
+                : center;
+                :space-between   i.e space b/w items only
+                :space-around    i.e space b/w items and container*/
+
+.container {
+  border: 2px solid black;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+}
+
+/* 2.align-items- to align items vertically
+                :flex-start i.e top 
+                :flex-end i.e bottom
+                :center
+                :stretch - fills lenght of container
+                :baseline - all elements on same line no matter the size of each element*/
+
+.container {
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: stretch;
+  align-items: baseline;
+  align-items: center;
+}

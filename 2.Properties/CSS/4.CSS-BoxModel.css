@@ -1,0 +1,50 @@
+/*Box Model
+All the elements in css will have a invisble box model around it
+1.content 
+2.padding -space b/w content and border, moves content inside element
+3.border -outline of element
+4.margin -moves the element on the screen
+
+Changing content size
+height : absolute unit px; 
+width : relative unit % or vw;
+It's recomended to use width as responsive unit as height remains constant in most of the devices
+
+i.e There is no fixed values we have to change arround and keep what is good
+*/
+
+.img {
+  height: 250px;
+  width: 60%;
+}
+
+/* Border:  Outline of an element
+border: size style color 
+size: 1-4px standard
+*/
+
+.img {
+  border: 4px solid #000;
+  border: 4px dotted #000;
+  border: 4px dashed #000;
+  border: 4px double #000;
+}
+
+/*Padding and Margin
+Padding used to move content inside the element
+Margin used to move the element around the page
+
+Syntax is same for both
+1.padding:all 4 sides
+2.padding-side:specific side
+3.margin:top right bottom left
+4.margin:top&bottom left&right
+*/
+
+.img {
+  padding: 10px;
+  margin: 20px;
+  margin: 10px 0;
+  padding-bottom: 50px;
+  margin: 10px 5px 0px 3px;
+}
