@@ -86,3 +86,74 @@ Units
             vh      view-height
 
 Text Manipulation
+
+1.Text-transform:capitalize
+                :lowercase
+                :uppercase
+                
+2.text-decoration:none
+                 :underline
+                 :line-through
+                 :overline
+
+3.text-align:center;
+            :left
+            :right
+            :justify
+
+Font Manipulation
+
+1.font-family:'times new roman'
+2.font-weight:0-600
+3.font-style:italic
+            :oblique
+4.font-style:px
+
+CSS Box Model
+
+1.content
+2.padding:top right bottom left;
+3.border :size style color
+4.margin-side:
+
+Display
+Float
+
+Flex-Box
+
+display:flex;
+1.Container
+2.Item
+
+Container
+1.flex-direction:row (default)
+                :column
+                :row-reverse
+                :column-reverse
+                
+2.flex-wrap:nowrap(default)
+           :wrap
+
+3.justify-content:flex-start (left)
+                 :flex-end(right)
+                 :center
+                 :space-between
+                 :space-around
+                 
+4.align-items:stretch(default);
+             :flex-start(top)
+             :flex-bottom(bottom)
+             :center
+             :baseline
+
+Items
+1.order: 0 (default)
+2.flex-basis: min-width;
+3.flex-grow: 0 (default)
+4.flex-shrink: 1 (default)
+
+flex : grow shrink basis;
+
+5.align-self: flex-start(top)
+            : flex-end(bottom)
+            :center

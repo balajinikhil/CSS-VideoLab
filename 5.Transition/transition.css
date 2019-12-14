@@ -1,0 +1,51 @@
+/*Transition Property
+To make physical and positional changes dynamically to some extent transition property is used
+
+transition: property duration style delay;
+
+*/
+
+body {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  background: palevioletred;
+  color: azure;
+  border: none;
+  padding: 25px;
+  transition: all 2s ease-in-out 30ms;
+}
+
+.btn:hover {
+  background: white;
+}
+
+/* transform                ACCEPTS +VE AND -VE VALUES
+Physical
+It is a property which has methods which we call to change physical properties 
+1.transform:translate(Xaxis Yaxis)
+2.transform:scale(Xaxis Yaxis)
+*/
+
+.btn {
+  transform: translate(-20px, 20px);
+  transform: scale(2);
+}
+
+/* transform                     ACCEPTS +VE AND -VE VALUES
+Rotational
+To change the rotational axis of the element degree is the unit in which the values are used
+transform:rotate( deg)
+transform:skew( deg)
+ */
+
+.btn {
+  transform: rotate(25deg);
+  transform: skew(-15deg);
+}
+
+/* shorthand for transform methods
+transform:matrix(scaleX, skewY, skewX, scaleY, transformX, transformY) */

@@ -1,0 +1,106 @@
+/*Flex vs Grid
+Both are display method which is used to make conventional methods easier
+
+Flex although has few height properties focous more towards width of an item
+
+Grid focous on both height and width of an element
+
+CSS Grid
+Just like flex grid also has two main parts 
+1.container - which hold all the element i.e parent
+2.Item - all the elements inside container i.e child
+
+CSS grid include
+
+parent/container{
+    display:grid;
+}
+
+Rows and Columns
+We can assign number of rows or columns layout we want can tell the distance between them
+
+auto: will assign equal distance between the elements
+
+grid-template-rows:1stRowSize 2ndRowSize
+
+*/
+
+.container {
+  padding: 20px;
+  border: 2px solid black;
+  height: 300px;
+  display: grid;
+
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+h4 {
+  margin: 10px;
+  text-align: center;
+  background: chartreuse;
+  padding: 20px;
+}
+
+/* justify-content
+just like flex box to arrange items horizontal  */
+
+.container {
+  justify-content: start; /*default*/
+  justify-content: center;
+  justify-content: end;
+  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+/* align-content
+to align items in verticall manner */
+
+.container {
+  align-content: start;
+  align-content: end;
+  align-content: space-between;
+  align-content: space-evenly;
+  align-content: space-around;
+}
+
+/*Row and Column gap
+We can specify the gap between elements columns and rows 
+grid-column-gap:size 
+grid-row-gap:size 
+*/
+
+.container {
+  grid-column-gap: 150px;
+  grid-row-gap: 200px;
+  /*short-hand 
+            row     column*/
+  grid-gap: 200px 150px;
+}
+
+/* Items
+
+Row and Column Lines
+A grid layout consits of column lines and row lines which makes up the layout all comands works on this as the core
+
+We can modify elements position by refering to the grid layout
+
+grid-column:startPoint/endPoint or span length
+grid-row:startPoint/endPoint or span length
+*/
+
+h4:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 2/3;
+  /* starts from 1st column and ends at 3rd column */
+  /* starts from 2nd row and ends at 3rd row
+  rest of the elements are pushed down*/
+}
+
+/* grid area
+Short-hand 
+grid-area: rowStartpt/colStartpt rowEndpt/colEndpt;*/
+
+h4:first-child {
+  grid-area: 2/1 3/3;
+}

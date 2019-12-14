@@ -1,0 +1,24 @@
+#anime {
+  animation-name: learning;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  /* Short Hand
+  animation: name duration timing-function delay iteration-count direction  */
+}
+
+@keyframes learning {
+  0% {
+    background: yellowgreen;
+    transform: translate(50%);
+  }
+
+  100% {
+    background: white;
+
+    transform: scale(2);
+  }
+}

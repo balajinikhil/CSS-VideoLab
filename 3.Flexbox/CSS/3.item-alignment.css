@@ -1,7 +1,8 @@
 h4 {
   background: coral;
   color: whitesmoke;
-  margin: 25px;
+  margin: 10px;
+  padding: 20px;
 }
 
 .container {
@@ -15,12 +16,58 @@ h4 {
 .one {
   flex-basis: 10px;
   flex-grow: 1;
+  flex-shrink: 3;
+  align-self: flex-start;
 }
 
 .two {
+  flex-basis: 10px;
   flex-grow: 1;
+  flex-shrink: 0;
+  align-self: center;
 }
 
 .three {
+  flex-basis: 10px;
+  flex-grow: 3;
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+
+.four {
+  flex-basis: 10px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.five {
+  flex-basis: 10px;
+  flex-grow: 1;
   flex-shrink: 1;
+  align-self: flex-start;
+}
+
+/* Short Hand
+flex:grow shrink basis */
+
+ul {
+  display: flex;
+  background: cornflowerblue;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+li {
+  margin: 5px 20px;
+  list-style: none;
+}
+
+a {
+  color: bisque;
+  text-decoration: none;
+}
+
+li:nth-child(4) {
+  margin-left: auto;
 }
